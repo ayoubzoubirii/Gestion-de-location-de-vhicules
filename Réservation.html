@@ -51,82 +51,47 @@
         </div>
       </section>
     </div>
-    
+    <main id="reservation" class="reservation">
+      <form id="reservation-form" class="reservation-form" onsubmit="calculFoloss(event)">
     <div class="galleryy-section">
         <div class="bannerr">
         <h1>RÉSERVATION</h1>
       </div>
-        <div class="innerr-width">
+
+     
          
-          <div class="galleryy">
-  
-            <a href="#test" class="imagee">
-              <img src="images/moto.jpg.crdownload" alt="">
-            </a>
-  
-            <a href="#" class="imagee">
-              <img src="images/car 1.jpg" alt="">
-            </a>
-  
-            <a href="#" class="imagee">
-              <img src="images/CAR 2.jpg" alt="">
-            </a>
-  
-            <a href="#" class="imagee">
-              <img src="images/CAR 3.jpg" alt="">
-            </a>
-  
-          </div>
-        </div>
-        <div class="innerr-width">
-            
-            <div class="galleryy">
-    
-              <a href="#" class="imagee">
-                <img src="images/utilitaire-demenager.jpg" alt="">
-              </a>
-    
-              <a href="#" class="imagee">
-                <img src="images/CAM.jfif" alt="">
-              </a>
-              <a href="#" class="imagee">
-                <img src="images/le-tractopelle.jpg" alt="">
-              </a>
-             
-    </div  >
-            
-    <div class="choix">
-        <div>
-            <h1>carburant</h1>
-          </div>
           
-        <input type="radio" id="essence" class="btn "  name="cer" >essence 
-        <input type="radio" id="diesel" class="btn " name="cer" >diesel 
-        <input type="radio" id="electrique" class="btn " name="cer"  >electrique
-        <input type="radio" id="hybride" class="btn " name="cer" >hybride
-    </div>
-    <div class="choix">
-        <div>
-            <h1>boite à vitesse</h1>
-          </div>
-          <input type="radio" id="man" class="btn " name="bv"  >man
-          <input type="radio" id="auto" class="btn " name="bv" >auto
-        
-    </div>
-    <div class="days">
-        <div>
-            <h1>durée de réservation</h1>
-          <input type="number" min="1" name="days" id="days" placeholder="entre  nombre de jours ">
-          <button class="btn " >AYOUB</button>
+            <label class="imagee" for="moto"><img src="images/moto.jpg.crdownload" alt="moto"><input onchange="showOptions(this)" id="moto" value="moto" type="radio" name="vehicle">  Moto </label>
+            <label class="imagee" for="citadine"><img src="images/car 1.jpg" alt="citadine"><input onchange="showOptions(this)" id="citadine" value="citadine" type="radio" name="vehicle"> Citadine </label>
+            <label class="imagee" for="compact"><img src="images/CAR 2.jpg" alt="compact"><input onchange="showOptions(this)"t id="compact" value="compact" type="radio" name="vehicle"> Compact </label>
+            <label  class="imagee" for="berline"><img src="images/CAR 3.jpg" alt="berline"><input onchange="showOptions(this)" id="berline" value="berline" type="radio" name="vehicle"> Berline </label>
+           
+             
+  </div  >
+  <div class="galleryy-section">
+  
 
-    </div>
-    
-        <div>
+        <label class="imagee" for="utilitaire"><img src="images/utilitaire-demenager.jpg" alt="utilitaire"><input onchange="showOptions(this)" id="utilitaire" value="utilitaire" type="radio" name="vehicle"> Utilitaire </label>
+        <label class="imagee" for="engin-de-chantier"><img src="images/le-tractopelle.jpg" alt="engin de chantier"><input onchange="showOptions(this)" id="engin-de-chantier" value="engin-de-chantier" type="radio" name="vehicle"> Engin de chantier </label>
+        <label class="imagee" for="camion"><img src="images/CAM 2.jfif" alt="camion"><input onchange="showOptions(this)" id="camion" value="camion" type="radio" name="vehicle"> Camion </label>
+         
+</div  >
+</div  >
 
-    
             
-          </div>
+    <div   id="carburant" class="justsome"></div>
 
+    <div   id="boite" class="justsome"></div>
+    
+    <div   id="howManyDays"></div>
+
+    <div   id="error" class="error"></div>
+
+    <div  class="choix" id="foloss"></div>
+
+    <br><br><button class="choix" type="submit">Submit</button>
+  </form>
+</main>
     
     <script src="script.js"></script>
    

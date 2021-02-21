@@ -119,18 +119,33 @@
           </div>
       </div>
   </div>
-  <div id="contact" class="contact-section">
+  <form id="contact" name="contactForm" onsubmit="validateForm()" >
+    <h2>Contacter Nous</h2>
+    <div class="row">
+        <label>Nom</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="row">
+        <label>Email </label>
+        <input type="text" name="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="row">
+        <label>Sujet</label>
+        <input type="text" name="sujet" >
+        <div class="error" id="sujetErr"></div>
+    </div> 
+     <div class="row">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <div class="error" id="msgErr"></div>
+    </div>       
+    <div class="row">
+        <input type="submit" value="Submit" >
+    </div>
+</form>
 
-    <h1>Contact Us</h1>
-    <div class="borderr"></div>
-    <form class="contact-form" action="index.html" method="post">
-      <input type="text" id="name" class="contact-form-text" placeholder="Your name">
-      <input type="email"id="email" class="contact-form-text" placeholder="Your email">
-      <input type="text"id="numbre" class="contact-form-text" placeholder="Your phone">
-      <textarea id="message" class="contact-form-text" placeholder="Your message"></textarea>
-      <input type="button" class="contact-form-btn" value="Send"   onclick="contact()">
-    </form>
-  </div>
     <script src="script.js"></script>
    
     <script src="tilt.js"></script>

@@ -346,7 +346,7 @@ html {
 }
 .gallery-section{
   width: 100%;
-  padding: 60px 0;
+  padding: 120px 0;
   background: #f1f1f1;
 }
 
@@ -377,7 +377,7 @@ html {
 }
 
 .gallery-section .image{
-  flex: 25%;
+  flex: 24%;
   overflow: hidden;
   cursor: pointer;
   margin-top: 30px;
@@ -405,62 +405,112 @@ html {
     flex: 50%;
   }
 }
-.contact-section{
-  background:rgb(255, 255, 255) no-repeat center;
-  background-size: cover;
-  padding: 125px 0;
+.navcont{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  left: 0%;
 }
-.contact-section h1{
-  font-size: 4em;
-  text-align: center;
- 
-}
-.borderr{
-  width: 100px;
-  height: 10px;
-  background: #b89a85;
-  margin: 40px auto;
-}
+.navcont a{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background: #fff;
+  color: #9f01ea;
+  text-transform: uppercase;
+  padding: 15px 0 15px 10px;
 
-.contact-form{
-  max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
-  overflow: hidden;
+  margin: 15px 0;
+  width: 250px;
+  letter-spacing: 1.5px;
+  box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75); 
+  position: relative;
+  margin-left: -180px;
+  transition: 0.5s ease;
 }
-
-.contact-form-text{
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 16px 0;
-  border: 0;
-  background: #b89a85;
-  padding: 20px 40px;
-  outline: none;
-  color: #ddd;
-  transition: 0.5s;
-}
-.contact-form-text:focus{
-  box-shadow: 0 0 10px 4px #34495e;
-}
-textarea.contact-form-text{
-  resize: none;
-  height: 120px;
-}
-.contact-form-btn{
+.navcont a span{
   float: right;
-  border: 0;
-  background: #34495e;
+  width: 70px;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
   color: #fff;
-  padding: 12px 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
+  background-color: #56d8e4;
+  position: absolute;
+  right: 0;
+  top: 0;
+
 }
-.contact-form-btn:hover{
-  background: #2980b9;
+.navcont a span i{
+  font-size: 20px;
 }
+.navcont a:hover{
+  margin-left: 0;
+}
+
+h2 {
+text-align: center;
+text-decoration: underline;
+color: #39A1FF;
+}
+form {
+
+box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+width: 60%;
+background: #fff;
+padding: 15px 40px 40px;
+border: 1px solid #ccc;
+margin: 50px auto 0;
+border-radius: 5px;
+}
+label {
+display: block;
+margin-bottom: 5px
+}
+label i {
+color: #999;
+font-size: 80%;
+}
+.row input,textarea {
+border: 1px solid #ccc;
+padding: 10px;
+display: block;
+width: 100%;
+box-sizing: border-box;
+border-radius: 2px;
+}
+.row {
+padding-bottom: 10px;
+}
+.form-inline {
+border: 1px solid #ccc;
+padding: 8px 10px 4px;
+border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+display: inline-block;
+width: auto;
+padding-right: 15px;
+}
+.error {
+color: red;
+font-size: 90%;
+}
+input[type="submit"] {
+font-size: 110%;
+font-weight: 100;
+background: #56d8e4;
+box-shadow: 0 3px 0 #0165b6;
+color: #fff;
+margin-top: 10px;
+cursor: pointer;
+}
+/input[type="submit"]:hover {
+background: #0165b6;
+} 
+
+
 
 
 
@@ -530,6 +580,7 @@ textarea.contact-form-text{
   text-align: center;
   margin-top: 3em;
 }
+
 .btn{
   border: 1px solid #3498db;
 background-color: cornflowerblue; 
@@ -550,3 +601,44 @@ background-color: cornflowerblue;
   text-align: center;
   margin-top: 3em;
 }
+/* start reservation */
+
+.reservation {
+    display: flex;
+    justify-content: center;
+}
+
+.reservation-form {
+    width: 100%;
+    text-align: center;
+}
+
+.reservation-form div label {
+    display: inline-block;
+    margin: 0 1% 0 0;
+}
+
+[type="submit"] {
+    width: 65px;
+    height: 25px;
+    color: aliceblue;
+    background-color: black;
+    border-color: black;
+}
+
+.reservation-form div label img{
+    width: 200px;
+    height: 120px;
+}
+
+.reservation-form div label{
+    width: 200px;
+    height: 120px;
+}
+
+.justsome {
+    margin-top: 50px;
+}
+
+
+/* end reservation */
